@@ -1,14 +1,24 @@
-The purpose of this app is to demo some basic Auth0 functionality for a fictional business called Travel0
 
 ## Table of Contents
 
 - [Background](#background)
-- [Install](#install)
-- [Getting Started](#getting-started)
+- [Local Setup & Run](#local-setup--run)
+- [Key Files](#key-files)
 
 ## Background
 
-The goals for this repository are:
+This is basic Next.js web app created for the purposes of a mock demonstration. The app contains basic Auth0 authentication
+and features required for the demo.
+
+Features included:
+- Basic Username & Password signup & login
+- Oauth 2.0 Login (Google only)
+- Account linking prompt
+- Email verification required error
+- Basic User Profile
+- Logout Function
+
+Hosted version of this app can be found [here](https://cruise0-demo.vercel.app/)
 
 ## Local Setup & Run
 
@@ -30,6 +40,16 @@ npm run dev # Start the development server, env.local will be loaded into the en
 Open [http://localhost:3000](http://localhost:3000) in a browser. *Due to configured Auth0 application settings this must be port 3000
 
 ## Key Files
+
+`/pages/index.js` - Enter point for the app & contains login link
+
+`/pages/dashboard.js` - Mock dashboard accessible after authentication
+
+`/pages/profile.js` - Mock profile page listing the authenticated user's email
+
+`/components/navbar.js` - Nav bar containing logout link
+
+`/pages/api/auth/[...auth0].js` - Auth0 API route & method import
 
 
 
