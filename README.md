@@ -10,24 +10,22 @@ The purpose of this app is to demo some basic Auth0 functionality for a fictiona
 
 The goals for this repository are:
 
-## Install
+## Local Setup & Run
 
-This project uses [node](http://nodejs.org) and [npm](https://npmjs.com). Go check them out if you don't have them locally installed.
+This project requires [node](http://nodejs.org) version `18.4.0` and [npm](https://npmjs.com) version `8.12.1`.\
+Go check them out if you don't have them locally installed.
 
-```sh
-$ npm install --global standard-readme-spec
-```
-
-
-## Getting Started
-
-First, run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+git clone git@github.com:amcd-dev/cruise0-demo.git # Clone repo to local directory
+
+cd cruise0-demo # CD into the new directory
+
+npm install # Install dependencies listed in package.json
+
+npm run dev # Start the development server
 ```
+Open [http://localhost:3000](http://localhost:3000) in a browser. *Note: Due to Auth0 application settings this must be port 3000
+
+
 

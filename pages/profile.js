@@ -25,10 +25,15 @@ export default function Example() {
                             <dt className="text-sm font-medium text-gray-500">Last Login</dt>
                             <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">{user.logins_count}</dd>
                         </div>
-
                     </dl>
                 </div>
             </div>
+            <a
+                href="/dashboard"
+                className=" mt-6 inline-block rounded-md border border-transparent bg-indigo-500 py-2 px-4 text-base font-medium text-white hover:bg-opacity-75"
+            >
+                Return to dashboard
+            </a>
         </div>
     )
 }
